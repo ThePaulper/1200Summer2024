@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: BorisP_Chair.ma
-//Last modified: Wed, May 15, 2024 09:37:03 PM
+//Last modified: Wed, May 15, 2024 09:41:46 PM
 //Codeset: 1252
 requires maya "2025";
 requires "mtoa" "5.4.0";
@@ -11,17 +11,17 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "E18D54E3-4161-A50A-9710-D6AF72CF3C31";
+fileInfo "UUID" "EA75EE9F-4896-A6FA-662C-E1855F33A071";
 createNode transform -s -n "persp";
 	rename -uid "5F232C6D-417B-8383-9C9E-0B972F97FD73";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 3.0381642792138344 9.9591933537638191 -19.08991495756743 ;
-	setAttr ".r" -type "double3" -17.738352729541091 532.99999999987847 0 ;
+	setAttr ".t" -type "double3" -4.132317519064685 2.8439136407598733 -16.062378466162723 ;
+	setAttr ".r" -type "double3" 2.0616472704722049 555.39999999974737 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5BAA5C78-4511-9DAA-80A8-ACB8E740642E";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 21.261706452360514;
+	setAttr ".coi" 17.719669421289346;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -91,8 +91,7 @@ createNode mesh -n "ChairShape" -p "Chair";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr ".dr" 3;
-	setAttr ".dsm" 2;
+	setAttr ".dr" 1;
 createNode lightLinker -s -n "lightLinker1";
 	rename -uid "F662914F-4578-316B-A60A-71B4A9824842";
 	setAttr -s 2 ".lnk";
@@ -769,7 +768,7 @@ createNode polySplitRing -n "polySplitRing33";
 	setAttr ".p[0]"  0 0 1;
 	setAttr ".fq" yes;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "1451B174-43ED-153B-AA38-2DB298780DB7";
+	rename -uid "9986F78B-44F5-EE6C-D824-AA982F461DE6";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
