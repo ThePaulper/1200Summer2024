@@ -1,6 +1,6 @@
 //Maya ASCII 2025 scene
 //Name: Mug.ma
-//Last modified: Fri, May 17, 2024 10:20:57 PM
+//Last modified: Fri, May 17, 2024 10:23:02 PM
 //Codeset: 1252
 requires maya "2025";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.4.0";
@@ -11,12 +11,12 @@ fileInfo "product" "Maya 2025";
 fileInfo "version" "2025";
 fileInfo "cutIdentifier" "202402161156-0caf8d1269";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22631)";
-fileInfo "UUID" "BF19C797-4F45-F931-022E-4BB557DAC0E5";
+fileInfo "UUID" "B1720FC7-4467-018A-2EAD-A89C2D25C017";
 createNode transform -s -n "persp";
 	rename -uid "8808BD5D-442F-C143-A509-D7A0AE127364";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -27.143281142380172 7.6470162182185231 1.7169217087162159 ;
-	setAttr ".r" -type "double3" -2.7383527296512327 -90.999999999981313 0 ;
+	setAttr ".t" -type "double3" -17.690923223085932 23.745761563359068 15.367405178796417 ;
+	setAttr ".r" -type "double3" -35.738352729649698 -57.39999999998134 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "99A78C81-41D2-DBBA-717B-56861BE7FB15";
 	setAttr -k off ".v" no;
@@ -365,7 +365,7 @@ createNode polyBevel3 -n "polyBevel1";
 	setAttr ".mvt" 0.0001;
 	setAttr ".sa" 30;
 createNode mayaUsdLayerManager -n "mayaUsdLayerManager1";
-	rename -uid "5FF3BBD3-4935-7B0F-3A3C-15B8B2505D1D";
+	rename -uid "CE2ADF2A-4E61-89E0-83D3-CF8EDFF07F38";
 	setAttr ".sst" -type "string" "";
 select -ne :time1;
 	setAttr ".o" 1;
